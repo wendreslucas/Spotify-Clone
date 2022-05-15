@@ -27,7 +27,6 @@ function Playlist() {
       })
 
       dispatch({ type: reducerCases.SET_PLAYLISTS, playlists })
-      console.log(items)
     }
     getPlaylistData()
   }, [token, dispatch])
