@@ -13,13 +13,18 @@ import axios from 'axios'
 
 function PlayerControls() {
   const [{ token, playerState }, dispatch] = useStateProvider()
+
   const changeTrack = async type => {
-    await axios.post(`https://api.spotify.com/v1/me/player/${type}`, {
-      headers: {
-        Authorization: `Bearer ${token}`,
-        'Content-Type': 'application/json'
+    await axios.post(
+      `https://api.spotify.com/v1/me/player/${type}`,
+      {},
+      {
+        headers: {
+          Authorization: `Bearer ${token}`,
+          'Content-Type': 'application/json'
+        }
       }
-    })
+    )
     const response = await axios.get(
       'https://api.spotify.com/v1/me/player/currently-playing',
       {
