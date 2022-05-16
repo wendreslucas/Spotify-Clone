@@ -94,8 +94,7 @@ function Body() {
                       <div className="col">
                         <span>{index + 1}</span>
                       </div>
-
-                      <div className="colDetail">
+                      <div className="col detail">
                         <div className="image">
                           <img src={image} alt="track" />
                         </div>

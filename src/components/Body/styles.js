@@ -61,6 +61,7 @@ export const Container = styled.div`
 
           img {
             height: 40px;
+            width: 40px;
           }
         }
 
@@ -71,6 +72,10 @@ export const Container = styled.div`
           .info {
             display: flex;
             flex-direction: column;
+
+            .name {
+              color: #dddcdc;
+            }
           }
         }
       }
