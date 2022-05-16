@@ -11,7 +11,8 @@ export const Container = styled.div`
     transition: 0.2s ease-in-out;
 
     &:hover {
-      color: white;
+      color: red;
+      cursor: pointer;
     }
   }
 
@@ -24,5 +25,6 @@ export const Container = styled.div`
   .previous,
   .next,
   .state {
+    font-size: 2rem;
   }
 `
