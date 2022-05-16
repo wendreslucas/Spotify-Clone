@@ -37,6 +37,8 @@ export const Container = styled.div`
       top: 15vh;
       padding: 1rem 3rem;
       transition: 0.3s ease-in-out;
+      background-color: ${({ headerBackground }) =>
+        headerBackground ? '#000000dc' : 'none'};
     }
 
     .tracks {

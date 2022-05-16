@@ -1,5 +1,5 @@
+import React, { useEffect, useRef, useState } from 'react'
 import axios from 'axios'
-import React, { useEffect } from 'react'
 import '../../App.css'
 import Body from '../../components/Body'
 import Footer from '../../components/Footer'
@@ -11,6 +11,19 @@ import { Container } from './style'
 
 const Home = () => {
   const [{ token }, dispatch] = useStateProvider()
+  const bodyRef = useRef()
+  const [navBackground, setNavBackground] = useState(false)
+  const [headerBackground, setHeaderBackground] = useState(false)
+
+  const bodyScrolled = () => {
+    bodyRef.current.scrollTop >= 30
+      ? setNavBackground(true)
+      : setNavBackground(false)
+
+    bodyRef.current.scrollTop >= 268
+      ? setHeaderBackground(true)
+      : setHeaderBackground(false)
+  }
 
   useEffect(() => {
     document.title = 'Spotify Clone | Home'
@@ -38,10 +51,10 @@ const Home = () => {
     <Container>
       <div className="spotifyBody">
         <LeftMenu />
-        <div className="body">
-          <Navbar />
+        <div className="body" ref={bodyRef} onScroll={bodyScrolled}>
+          <Navbar navBackground={navBackground} />
           <div className="bodyContent">
-            <Body />
+            <Body headerBackground={headerBackground} />
           </div>
         </div>
       </div>

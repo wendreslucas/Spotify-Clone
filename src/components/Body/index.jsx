@@ -5,7 +5,7 @@ import { Container } from './styles'
 import { useStateProvider } from '../../service/StateProvider'
 import { reducerCases } from '../../service/Constants'
 
-function Body() {
+function Body({ headerBackground }) {
   const [{ token, selectedPlaylistId, selectedPlaylist }, dispatch] =
     useStateProvider()
 
@@ -43,8 +43,14 @@ function Body() {
     getInitialPlaylist()
   }, [token, dispatch, selectedPlaylistId])
 
+  const msToMinutesAndSeconds = ms => {
+    const minutes = Math.floor(ms / 60000)
+    const seconds = ((ms % 60000) / 1000).toFixed(0)
+    return `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`
+  }
+
   return (
-    <Container>
+    <Container headerBackground={headerBackground}>
       {selectedPlaylist && (
         <>
           <div className="playlist">
@@ -107,7 +113,7 @@ function Body() {
                         <span>{album}</span>
                       </div>
                       <div className="col">
-                        <span>{duration}</span>
+                        <span>{msToMinutesAndSeconds(duration)}</span>
                       </div>
                     </div>
                   )
