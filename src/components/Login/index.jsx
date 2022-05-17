@@ -4,8 +4,8 @@ import { Container } from './style'
 const Login = () => {
   const handleClick = () => {
     const clientId = 'fca5f69815ef46cba540f65c0c1b7ae2'
-    // const redirectUrl = 'http://localhost:3000'
-    const redirectUrl = 'https://spotify-clone-nine-gilt.vercel.app/'
+    const redirectUrl = 'http://localhost:3000'
+    //const redirectUrl = 'https://spotify-clone-nine-gilt.vercel.app/'
     const apiUrl = 'https://accounts.spotify.com/authorize'
     const scope = [
       'user-read-email',
