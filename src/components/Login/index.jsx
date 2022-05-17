@@ -13,7 +13,7 @@ const Login = () => {
       'user-read-playback-state',
       'user-read-currently-playing',
       'user-read-recently-played',
-      'user-read-playback-position',
+
       'user-top-read'
     ]
     window.location.href = `${apiUrl}?client_id=${clientId}&redirect_uri=${redirectUrl}&scope=${scope.join(
