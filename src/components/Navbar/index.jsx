@@ -14,7 +14,8 @@ function Navbar({ navBackground }) {
       </div>
       <div className="avatar">
         <a href="#">
-          <CgProfile />
+          {/* <CgProfile /> */}
+          <img src={userInfo.userImage} alt="avatar" />
           <span>{userInfo?.userName}</span>
         </a>
       </div>

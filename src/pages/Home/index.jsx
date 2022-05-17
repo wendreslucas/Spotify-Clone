@@ -39,9 +39,10 @@ const Home = () => {
       })
       const userInfo = {
         userId: data.id,
-        userName: data.display_name
+        userName: data.display_name,
+        userImage: data.images[0].url
       }
-
+      console.log(data)
       dispatch({ type: reducerCases.SET_USER, userInfo })
     }
     getUserInfo()

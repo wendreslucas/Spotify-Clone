@@ -51,13 +51,19 @@ export const Container = styled.div`
 
       font-weight: bold;
 
-      svg {
+      img {
+        border-radius: 1rem;
+        padding: 0.2rem;
+        width: 2.5rem;
+      }
+
+      /* svg {
         font-size: 1.3rem;
         background-color: #282828;
         padding: 0.2rem;
         border-radius: 1rem;
         color: #c7c5c5c5;
-      }
+      } */
     }
   }
 `
