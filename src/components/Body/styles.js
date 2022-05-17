@@ -54,6 +54,7 @@ export const Container = styled.div`
 
         &:hover {
           background-color: rgba(0, 0, 0, 0.7);
+          cursor: pointer;
         }
 
         .col {
