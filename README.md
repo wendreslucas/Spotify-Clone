@@ -9,8 +9,6 @@ Hope you enjoy it!
 - Styled-Components
 - Axios
 
-## Start
-
 ## Installation
 
 First you have to install all the dependencies:
@@ -23,6 +21,10 @@ npm i
 
 Then you have to create a file with the name '.env' at the root folder of the project.
 Inside this file you have to create a variable with named REACT_APP_API_URL.
+
+## Start
+
+npm run start
 
 ## Application on Vercel:
 
