@@ -11,10 +11,21 @@ Hope you enjoy it!
 
 ## Installation
 
-First you have to install all the dependencies:
+First, download the zip or clone this repository into your personal computer.
+
+Use the package manager [yarn or npm] to install the dependencies.
 
 ```
-npm i
+bash
+
+```
+
+yarn
+
+After that, you can launch the application using the following command:
+
+```
+yarn start
 ```
 
 ## Environment variable
@@ -22,14 +33,18 @@ npm i
 Then you have to create a file with the name '.env' at the root folder of the project.
 Inside this file you have to create a variable with named REACT_APP_API_URL.
 
-## Start
-
-npm run start
-
 ## Application on Vercel:
 
 spotify-clone-nine-gilt.vercel.app
 
-## Follow me:
+## About the author
+
+The entire app was made by me.
 
 [Instagram](https://www.instagram.com/wendreslucas/)
+
+[LinkedIn](https://www.linkedin.com/in/wendres-lucas)
+
+## Demo
+
+[Spotify-Clone](spotify-clone-nine-gilt.vercel.app)
