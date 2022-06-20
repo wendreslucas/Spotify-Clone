@@ -3,7 +3,7 @@ import FormLogin from '../../components/Login'
 
 const Login = () => {
   useEffect(() => {
-    document.title = 'PostCode | Login'
+    document.title = 'SpotiClone | Login'
   }, [])
 
   return (

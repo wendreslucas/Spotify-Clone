@@ -2,7 +2,6 @@ import React, { useEffect } from 'react'
 import { Container } from './styles'
 import { useStateProvider } from '../../service/StateProvider'
 import axios from 'axios'
-// import { reducerCases } from '../../services/reducerCases'
 import { reducerCases } from './../../service/Constants'
 
 function CurrentTrack() {
